@@ -1,0 +1,51 @@
+<div class="row">
+  <div
+    class="draggable draggable-1"
+    #draggable
+    [attr.draggable]="dragging"
+    (dragstart)="onDragStart($event, DRAGGED1)"
+    (dragend)="onDragEnd($event)"
+  >
+    Draggable Content
+    <div
+      class="handle"
+      (mousedown)="startDragging()"
+      (mouseup)="stopDragging()"
+    >
+      Drag Handle
+    </div>
+  </div>
+
+  <div
+    class="draggable draggable-2"
+    #draggable
+    [attr.draggable]="dragging"
+    (dragstart)="onDragStart($event, DRAGGED2)"
+    (dragend)="onDragEnd($event)"
+  >
+    Draggable Content 2
+    <div
+      class="handle"
+      (mousedown)="startDragging()"
+      (mouseup)="stopDragging()"
+    >
+      Drag Handle
+    </div>
+  </div>
+</div>
+
+<div
+  class="dropzone dropzone-1"
+  (dragover)="onDragOver($event)"
+  (drop)="onDrop($event, DROPZONE1)"
+>
+  Dropzone # 1
+</div>
+
+<div
+  class="dropzone dropzone-2"
+  (dragover)="onDragOver($event)"
+  (drop)="onDrop($event, DROPZONE2)"
+>
+  Dropzone # 2
+</div>

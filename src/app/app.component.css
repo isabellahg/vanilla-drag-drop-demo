@@ -1,0 +1,45 @@
+.draggable {
+  padding: 10px;
+  background-color: lightblue;
+  user-select: none;
+  width: 200px;
+  height: 90px;
+}
+
+.dropzone {
+  padding: 50px;
+  background-color: lightgray;
+  border: 2px dashed black;
+  width: 400px;
+  height: 200px;
+}
+
+.handle {
+  cursor: grab;
+  padding: 5px;
+  background-color: darkblue;
+  color: white;
+  user-select: none;
+}
+
+.dropzone-1 {
+  background-color: pink;
+}
+
+.dropzone-2 {
+  background-color: aliceblue;
+}
+
+.draggable-1 {
+  background-color: khaki;
+}
+
+.draggable-2 {
+  background-color: cornflowerblue;
+}
+
+.row {
+  display: inline-flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
